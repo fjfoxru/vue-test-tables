@@ -1,0 +1,23 @@
+.grid__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background: #7d89cd;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: navajowhite;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #7d89cd8a;
+    transition: 0.2s;
+}
