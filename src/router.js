@@ -12,7 +12,7 @@ const routes = new Router({
             component: () => import('@/layout/LayoutFront/LayoutFront'),
             children: [
                 {
-                    path: '',
+                    path: '*',
                     name: 'Main',
                     components: {
                         default: () => import('@/views/ViewMain'),
@@ -40,10 +40,13 @@ const routes = new Router({
                 },
                 {
                     path: '*',
-                    name: 'notFound',
-                    component: () => import('@/views/View404'),
+                    name: 'Main',
+                    components: {
+                        default: () => import('@/views/ViewMain'),
+                        sidebar: () => import('@/views/ViewSidebar'),
+                    },
                     meta: {
-                        requiresAuth: false,
+                        layout: 'LayoutFrontContentMain',
                     }
                 },
             ]
