@@ -3,7 +3,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const routes = new Router({
-    mode: 'hash',
+    mode: 'history',
     routes: [
         // Внешняя часть сайта
         {
